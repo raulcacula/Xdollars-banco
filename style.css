@@ -1,0 +1,621 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+span{
+    color: cornflowerblue;
+}
+body{
+    height: 100vh;
+}
+img{
+    object-fit: cover;
+    max-width: 100%;
+}
+header{
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+    display: flex;
+    background: black;
+}
+.logo{
+    font-family:'Dancing Script', cursive;
+   color: white;
+}
+#item-container a{
+    text-decoration: none;
+    background:transparent;
+    border-color: cornflowerblue;
+    border-style: solid;
+    padding: 0.5rem 2rem;
+    color: white;
+    border-radius: 22px;
+    transition: 0.5s;
+    font-family: 'poppins';
+}
+#item-container a:hover{
+    color:cornflowerblue;
+    border-color: white;
+}
+section{
+    padding: 90px 15% 80px;
+}
+span{
+    color: cornflowerblue;
+}
+.background-inicio{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)),
+     url(https://www.asomadetodosafetos.com/content/uploads/2017/10/era-voce-quando-viam-sorrindo-olhando-o-celular-e-nao-sabiam-o-porque.jpg);
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+}
+section.titulo-crie{
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+   
+}
+.frase-crie{
+    font-size: 40px;
+    font-family: 'poppins';
+}
+.logo-x{
+    font-size: 20px;
+    font-family: 'poppins';
+}
+.logo-x span{
+    color: cornflowerblue;
+}
+@media screen and (max-width:600px){
+    .frase-crie{
+        font-size: 30px;
+    }
+}
+section.invest{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: -70px;
+}
+section.invest img{
+    display: flex;
+    max-width: 50%;
+}
+.invest-frase{
+    text-align: left;
+    font-size: 40px;
+}
+.invest-frase h1{
+    color: black;
+    font-weight: 700;
+    font-family:'poppins';
+    color:black;
+    letter-spacing: 1px;
+
+}
+@media screen and (max-width:800px){
+    section.invest{
+        flex-direction: column;
+        width: 100%;
+    }
+    .invest-frase{
+        margin-bottom: 32px;
+        text-align: center;
+        font-size: 30px;
+    }
+    section.invest img{
+        margin-bottom: 32px;
+    }
+}
+.back-conta{
+    background: cornflowerblue;
+   
+}
+section.conta{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 1rem;
+}
+.conta-texto{
+    margin-top: 50px;
+    text-align: right;
+}
+.conta-texto h1{
+    color: cornsilk;
+    font-family: 'poppins';
+    font-size: 50px;
+}
+.conta-texto h2{
+    font-size: 25px;
+    font-family: 'poppins';
+    color: aliceblue;
+}
+section.conta img{
+    max-width: 50%;
+    gap: 20px;
+}
+@media screen and (max-width:600px){
+    section.conta{
+        flex-direction: column;
+    }
+    .conta-texto{
+        margin-top: 1px;
+        font-size: 100%;
+    }
+}
+.container-card{
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    gap: 40px;
+    padding: 1rem;
+    margin-top: 100px;
+}
+.back-cartao{
+    background-color: black;
+}
+.titulo-card{
+    font-family: 'poppins';
+    font-size: 25px;
+    color: cornflowerblue;
+}
+.cartao{
+    position: relative;
+    width: 450px;
+    height: 250px;
+    border-color: transparent;
+    box-shadow: 10px 15px 20px -10px black;
+    border-style: solid;
+    background:
+    linear-gradient(150.10deg, cornflowerblue 10%,
+    black 100%
+    ) ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 8px;
+    animation:  card 3s ease infinite;
+}
+
+@keyframes card{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+.cartao h1{
+    display: flex;
+    text-align: right;
+    justify-content: right;
+    margin-right: 10px;
+    font-family: 'poppins';
+    color: aliceblue;
+    font-family: 'Tilt Prism', cursive;
+}
+.cartao p{
+    color: white;
+    text-align: left;
+    margin-left: 30px;
+    margin-top: 80px;
+    font-family: 'poppins';
+    font-size: 22px;
+}
+.container-card #mova{
+    color: cornflowerblue;
+    font-size: 20px;
+    font-family: 'poppins';
+}
+#mova i {
+    animation: pra-cima 2s ease infinite;
+}
+@keyframes pra-cima{
+    0%{
+        transform: translateY(-20px);
+    }
+    100%{
+        transform: translateY(0px);
+        color: white;
+    }
+}
+@media screen and (max-width:800px){
+    .cartao{
+        position: relative;
+        width: 330px;
+        height: 200px;
+        border-color: transparent;
+        box-shadow: 10px 15px 20px -10px black;
+        border-style: solid;
+        background:
+        linear-gradient(150.10deg, cornflowerblue 10%,
+        black 100%
+        ) ;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border-radius: 8px;
+        animation:  card 3s ease infinite;
+        margin-right: -5px;
+    }
+    .titulo-card{
+        margin-top: -80px;
+    }
+}
+.back-entrar{
+    background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)),
+    url(https://paisefilhos.uol.com.br/wp-content/uploads/2022/10/familia-unida-rindo.webp);
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+.container-entrar{
+    display: flex;
+    justify-content: space-around;
+   
+}
+.entrar-texto{
+    margin-top: 50px;
+    text-align:left;
+    justify-content: center;
+    color: white;
+    font-family: 'poppins';
+    font-size: 30px;
+}
+.criar-form{
+    margin-top:50px;
+}
+.entrar-texto p{
+    line-height: 4;
+    font-size: 20px;
+    cursor: pointer;
+}
+.entrar-texto p:hover{
+    text-decoration: underline;
+}
+form #cpf{
+    width: 250px;
+    height: 50px;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+form{
+    background: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 15px 20px -10px  cornflowerblue;
+}
+.criar-form h2{
+    color: cornflowerblue;
+    margin-top: -0px;
+    text-align: center;
+    font-family: 'poppins';
+}
+form #btn{
+    width: 250px;
+    height: 40px;
+    border-radius: 40px;
+    background: gainsboro;
+    border-color: gray;
+    border-style: solid;
+    color: white;
+    font-family: 'poppins';
+}
+#erro1{
+    display: none;
+    margin-top: 20px;
+    font-family: 'poppins';
+    color: red;
+}
+form p2{
+   margin-top: 10px;
+   color: green;
+   font-family: 'poppins';
+}
+/* FORM 2*/
+.criar-email{
+    display: none;
+}
+form2{
+    margin-top: 50px;
+    background: white;
+    border-radius: 8px;
+    width: 300px;
+    height: 300px;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 15px 20px -10px  cornflowerblue;
+}
+form2 #email{
+    width: 250px;
+    height: 50px;
+    text-indent: 20px;
+    margin-top: 20px;
+}
+.criar-email h2{
+    color: black;
+    text-align: center;
+    font-family: 'poppins';
+}
+form2 #btn2{
+    width: 250px;
+    height: 40px;
+    border-radius: 40px;
+    background: gainsboro;
+    border-color: gray;
+    border-style: solid;
+    color: white;
+    font-family: 'poppins';
+}
+form2 p2{
+    margin-top: 10px;
+    color: green;
+    font-family: 'poppins';
+ }
+ #erro2{
+    display: none;
+    margin-top: 20px;
+    font-family: 'poppins';
+    color: red;
+ }
+#cnt{
+    display: none;
+    font-size: 30px;
+    text-align: center;
+    font-family: 'poppins';
+    animation: check 1s ease forwards;
+}
+.criar-email i{
+    display: none;
+    color: greenyellow;
+    font-size: 35px;
+    animation: check 1s ease forwards;
+}
+@keyframes check{
+    0%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-20px);
+    }
+}
+@media screen and (max-width:700px){
+    .entrar-texto{
+        margin-top: 10px;
+    }
+    form{
+        flex-direction: column;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .criar-form{
+        flex-direction: column;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+        margin-top: -0px;
+    }
+    .container-entrar{
+        flex-direction: column;
+        text-align: center;
+        margin-left: 0px;
+        justify-content: center;
+        align-items: center;
+    }
+    .entrar-texto{
+        text-align: center;
+        font-size: 100%;
+    }
+    .back-entrar{
+        background: linear-gradient(rgba(0,0,0,0.1), rgba(0,0,0,0.7)),
+        url(https://paisefilhos.uol.com.br/wp-content/uploads/2022/10/familia-unida-rindo.webp);
+        height: 100vh;
+        width: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 50px;
+    }
+    form2{
+        margin-top: 0px;
+        background: white;
+        border-radius: 8px;
+        width: 300px;
+        height: 300px;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        box-shadow: 0px 15px 20px -10px  cornflowerblue;
+    }
+}
+
+main.saldo-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 32px;
+    gap: 30px;
+} 
+main.saldo-celular, section.conta-celular{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-color:black;
+    border-style: solid;
+    border-radius: 20px;
+    padding: 2rem 1rem;
+    min-height: 300px;
+    background:linear-gradient(0deg, black 10%, transparent 10%),
+    linear-gradient(180deg, black 10% , transparent 10%);
+}
+.conta-titulo h1{
+    font-family: 'poppins';
+    position: relative;
+    color: cornflowerblue;
+}
+.conta-titulo span{
+    color: black;
+    margin-left: 10px;
+}
+main.saldo-block{
+   justify-content: center ;
+   align-items: center;
+   text-align: center;
+}
+.conta-titulo{
+    text-align: center;
+    justify-content: center;
+}
+.conta-titulo h1::after{
+    content: " ";
+    width: 100%;
+    height: 2px;
+     background: cornflowerblue;
+     position: absolute;
+     left: 0;
+     bottom: 0;  
+
+     right: 0;   
+     margin: auto;
+
+}
+.saldo{
+    text-align: left;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+.saldo p{
+    font-size: 13px;
+    font-family: 'poppins';
+}
+.saldo h1{
+    font-family: 'poppins';
+}
+.saldo p1{
+    font-family: 'poppins';
+    color: forestgreen;
+}
+.conta-pix{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-family: 'poppins';
+    color: cornflowerblue;
+}
+.conta-pix p{
+    background-color: gainsboro;
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.conta-pix p1{
+    color: cornflowerblue;
+}
+.titulo-celular{
+    text-align: left;
+    font-family: 'poppins';
+    color: cornflowerblue;   
+    font-size: 22px;
+}
+@media screen and (max-width:600px){
+    main.saldo-block{
+        flex-direction: column;
+    }
+}
+
+footer{
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    background: black;
+    padding: 32px;
+    color: white;
+
+}
+.links-footer{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 150px;
+    line-height: 2;
+}
+.links-footer h1{
+    font-size: 15px;
+    color: gray;
+    font-family: 'poppins';
+}
+.links-footer a{
+    color: white;
+    font-family: sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+}
+.links-footer  a:hover{
+    color: cornflowerblue;
+}
+.sociais{
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ margin-top: 20px;
+}
+.sociais h1{
+    font-family: 'poppins';
+    color: gray;
+   
+}
+.sociais a{
+    color: cornflowerblue;
+    text-decoration: none;
+    font-size: 22px;
+    font-family: 'poppins';
+}
+.sociais a:hover{
+    text-decoration: underline;
+}
+.sociais p{
+    margin-top: 100px;
+    font-size: 25px;
+    font-family: 'poppins';
+}
+@media screen and (max-width:600px){
+    .links-footer{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
