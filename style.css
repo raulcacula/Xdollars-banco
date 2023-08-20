@@ -28,7 +28,7 @@ header{
     background: black;
 }
 .logo{
-    font-family:'Dancing Script', cursive;
+    font-family:'poppins';
    color: white;
 }
 #item-container a{
@@ -83,6 +83,7 @@ section.titulo-crie{
 @media screen and (max-width:600px){
     .frase-crie{
         font-size: 30px;
+        margin-top: -20px;
     }
 }
 section.invest{
