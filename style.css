@@ -27,7 +27,7 @@ header{
     display: flex;
     background: black;
 }
-.logo{
+header .logo{
     font-family:'poppins';
    color: white;
 }
@@ -83,7 +83,7 @@ section.titulo-crie{
 @media screen and (max-width:600px){
     .frase-crie{
         font-size: 30px;
-        margin-top: -20px;
+        margin-top: -50px;
     }
 }
 section.invest{
@@ -117,10 +117,11 @@ section.invest img{
     .invest-frase{
         margin-bottom: 32px;
         text-align: center;
-        font-size: 30px;
+        font-size: 20px;
     }
     section.invest img{
         margin-bottom: 32px;
+        width: 100%;
     }
 }
 .back-conta{
@@ -160,6 +161,13 @@ section.conta img{
     .conta-texto{
         margin-top: 1px;
         font-size: 100%;
+    }
+    .conta-texto h1{
+        font-size: 25px;
+    }
+    .conta-texto h2{
+        font-size: 10px;
+        text-align: center;
     }
 }
 .container-card{
